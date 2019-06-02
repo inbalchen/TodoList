@@ -1,0 +1,79 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poiret One', cursive;
+	background: url('../images/hand.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+#container {
+	margin: 50px auto;
+	width: 60%;
+	background-color: #e0e2e4;
+	box-shadow: rgba(255,255,255,.8);
+	min-width: 240px;
+	position: relative;
+	
+}
+.complete-todo {
+	color: #b2b2b2;
+	text-decoration: line-through;
+}
+#container ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	background-color: #006699;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 7px 15px;
+	font-size: 40px; 
+}
+li {
+	background-color: #fff;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+}
+li:nth-child(2n) {
+	background-color: #E1E8ED;
+}
+input {
+	font-size: 26px;
+	border:none;
+	width: 100%;
+	background-color:  #CCD6DD;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	color: #8d9db6;
+	outline: none;
+	cursor: cell;
+}
+input:focus {
+	background-color: #fff;
+	border:2px solid #006699;
+}
+.plusholder {
+	float: right;
+	padding: 2px;
+	cursor: pointer;
+}
+.trashholder {
+	background-color: #EA4335;
+	height: 40px;
+	margin-right: 20px;
+	color: #fff;
+	text-align: center;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+	cursor: pointer;
+}
+li:hover span {
+	width: 40px; 
+	opacity: 1;
+}
